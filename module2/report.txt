@@ -1,0 +1,14 @@
+GRADE ANALYSIS REPORT
+---------------------
+Total scores:  1
+Average score: 99.00
+Highest score: 99
+Lowest score:  99
+
+GRADE BANDS
+-----------
+A (90+):   1
+B (80-89): 0
+C (70-79): 0
+D (60-69): 0
+F (<60):   0
