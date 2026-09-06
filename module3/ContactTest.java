@@ -48,4 +48,31 @@ public class ContactTest {
     public void getPhone_isNotNull() {
         assertNotNull(contact.getPhone());
     }
+    @Test
+public void contactsWithSameName_areIndependentObjects() {
+
+    Contact firstContact =
+            new Contact(
+                    "Ada Lovelace",
+                    "+1 617 555 0101"
+            );
+
+    Contact secondContact =
+            new Contact(
+                    "Ada Lovelace",
+                    "+1 617 555 9999"
+            );
+
+    assertNotSame(firstContact, secondContact);
+
+    assertEquals(
+            "+1 617 555 0101",
+            firstContact.getPhone()
+    );
+
+    assertEquals(
+            "+1 617 555 9999",
+            secondContact.getPhone()
+    );
+}
 }

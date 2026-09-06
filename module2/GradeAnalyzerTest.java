@@ -55,5 +55,22 @@ public void calculateAverage_sameScores_returnsSameValue() {
     double result = GradeAnalyzer.calculateAverage(scores);
 
     assertEquals(75.0, result, 0.001);
+    
+}
+@Test
+public void calculateAverage_tenScores_returnsExactAverage() {
+
+    ArrayList<Integer> scores =
+            new ArrayList<>(
+                    Arrays.asList(
+                            70, 75, 80, 85, 90,
+                            95, 100, 65, 60, 80
+                    )
+            );
+
+    double result =
+            GradeAnalyzer.calculateAverage(scores);
+
+    assertEquals(80.0, result, 0.001);
 }
 }
